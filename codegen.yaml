@@ -1,6 +1,6 @@
 overwrite: true
 schema:
-  - ./pages/api/schema.graphql
+  - ./src/pages/api/schema.graphql
 generates:
   ./pages/api/types.ts:
     plugins:
