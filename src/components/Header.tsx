@@ -1,8 +1,33 @@
+import { useStyles } from "../../styles/styles";
+
 const Header = () => {
+	const { theme, shadow } = useStyles();
 	return (
-		<header className='h-16 w-full flex items-center justify-center bg-primary-dark absolute z-10 shadow-lg'>
-			<h1 className='uppercase'>Navbar</h1>
-		</header>
+		<>
+			<header className="header">
+				<h1 className="title">Title Placeholder</h1>
+			</header>
+			<style jsx>{`
+				.header {
+					position: absolute;
+					z-index: 10;
+					height: 64px;
+					width: 100vw;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background-color: ${theme.primary.dark};
+					color: ${theme.primary.light};
+					box-shadow: ${shadow.md};
+				}
+
+				.title {
+					text-transform: uppercase;
+					letter-spacing: 2px;
+					color: ${theme.carrot[500]};
+				}
+			`}</style>
+		</>
 	);
 };
 

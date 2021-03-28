@@ -2,7 +2,7 @@
 	"arrowParens": "avoid",
 	"printWidth": 80,
 	"bracketSpacing": true,
-	"jsxSingleFalse": true,
+	"jsxSingleQuote": false,
 	"quoteProps": "as-needed",
 	"useTabs": true,
 	"semi": true

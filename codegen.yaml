@@ -1,13 +1,13 @@
 overwrite: true
 schema:
-  - ./src/pages/api/schema.graphql
+  - ./src/graphql/schema.graphql
 generates:
-  ./pages/api/types.ts:
+  ./types.ts:
     plugins:
       - typescript
       - typescript-resolvers
     config:
-      contextType: ./graphql#IContext
+      contextType: ./pages/api/graphql#IContext
       withHooks: true # We will be using React Hooks so we disable React Components
       withHOC: false
       withComponent: false

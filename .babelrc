@@ -1,18 +1,14 @@
 {
     "presets": [
-        "next/babel"
-    ],
-    "plugins": [
-        [
-            "styled-components",
+        ["next/babel",
             {
-                "ssr": true,
-                "displayName": true,
-                "preprocess": false
+                "styled-jsx": {
+                    "plugins": [
+                        "styled-jsx-plugin-postcss"
+                    ]
+                }
             }
-        ],
-        [
-            "macros"
         ]
-    ]
+    ],
+
 }
